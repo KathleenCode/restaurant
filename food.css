@@ -397,7 +397,7 @@
 
   /* styling hero section */
   .hero {
-    background-image: url(../image/hero.jpeg);
+    background-image: url(./image/hero.jpeg);
     background-size: cover;
     position: relative;
     z-index: 1;
@@ -542,9 +542,9 @@
   }
 
   .chef {
-    background-image: url(../image/main.jpeg);
+    background-image: url(./image/main.jpeg);
     background-position: center;
-    background: attachment: fixed;
+    background-attachment: fixed;
     background-size: cover;
     display: flex;
     justify-content: flex-end;
