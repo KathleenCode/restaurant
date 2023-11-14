@@ -363,7 +363,7 @@
   .header {
     display: flex;
     justify-content: space-between;
-    padding: 0 10rem; 
+    padding: 1rem 10rem; 
     background-color: #383138;
     color: #c9b288;
     position: sticky;
@@ -420,6 +420,7 @@
 
   .hero_text p {
     color: #fff;
+    margin: 0.5rem;
   }
 
   .hero_btns button:first-of-type {
@@ -806,6 +807,7 @@ footer ul li a {
 
   .header .burger:has(input:checked) + nav ul li a {
     border-bottom: 1px solid grey;
+    color: white;
     display: block;
 
   }
@@ -881,16 +883,19 @@ footer ul li a {
     .food_samples_header::after {
       width: 7rem;
     }
-  
+
   .samples {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 0.3rem;
   }
+  .sample {
+    flex-direction: column;
+  }
   
   .samples div img {
-    width: 9px;
+    width: 100px;
     height: 90px;
   }
   
@@ -983,7 +988,7 @@ form {
 }
   /* for medium-sized devices like i-pad 
   @media only screen and (min-width: 600px) */
-  @media only screen and (min-width: 600px) and (max-width: 800px) {
+  @media only screen and (min-width: 600px) and (max-width: 1200px) {
     .header nav ul {
       display: none;
     }
@@ -1030,6 +1035,7 @@ form {
 
   .header .burger:has(input:checked) + nav ul li a {
     border: 1px solid violet;
+    color: white;
     display: block;
   }
   .header .burger input:checked {
@@ -1062,7 +1068,6 @@ form {
     display: block;
     width: 100px;
   }
-
   .food_samples_header span {
     font-size: 0.5rem;
   }
@@ -1070,8 +1075,7 @@ form {
   .food_samples_header p {
     font-size: 1rem;
   }
-    
-      
+       
   .food_samples .samples {
    display: block;  
    margin: 2rem;
